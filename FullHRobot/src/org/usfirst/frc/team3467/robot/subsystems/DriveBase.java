@@ -34,6 +34,16 @@ public class DriveBase extends Subsystem {
         centerdrop   = new Solenoid(RobotMap.SOLENOID_DROP_CENTER);
         tractiondrop = new Solenoid(RobotMap.SOLENOID_DROP_TRACTION);
 	}
+	/**
+	 * Use for driving in autonomous. Left speed, right speed, and strafing speed.
+	 * 
+	 * @param left
+	 * @param right
+	 * @param strafe
+	 */
+	public void driveTimedHMode(double left, double right, double strafe){
+		
+	}
 	public void driveInHMode(){
     	leftspeed  = Robot.oi.leftStick.getY();
     	rightspeed = -(Robot.oi.rightStick.getY()); //negate value due to cims being flipped 
